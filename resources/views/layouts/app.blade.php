@@ -60,7 +60,7 @@
                                         </a>
 
                                         {!! Form::open(['route' => 'logout', 'method' => 'POST', 'id' => 'logout-form', 'style' => 'display: none']) !!}
-                                        
+
                                         {!! Form::close() !!}
                                     </div>
                                 </li>

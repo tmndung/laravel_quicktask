@@ -1,7 +1,7 @@
 <?php
 
 return [
-    
+
     'login' => 'Login',
     'email_address' => 'E-Mail Address',
     'password' => 'Password',
@@ -22,4 +22,13 @@ return [
     'request_another' => 'click here to request another',
     'dashboard' => 'Dashboard',
     'logged_in' => ' You are logged in!',
+    'task' => 'Task',
+    'add_task' => 'Add Task',
+    'whoop' => 'Whoops! Something went wrong!',
+    'new_task' => 'New Task',
+    'current_task' => 'Current Tasks',
+    'delete' => 'Delete',
+    'successfully_adding' => 'Bạn đã thêm thành công!',
+    'successfully_delete' => 'Bạn đã xóa thành công!',
+    'notification' => 'Thông báo:',
 ];

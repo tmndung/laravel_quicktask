@@ -17,6 +17,7 @@
 
         <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <link rel="stylesheet" href="css/toastr.min.css">
     </head>
     <body>
         <div id="app">
@@ -60,7 +61,7 @@
                                         </a>
 
                                         {!! Form::open(['route' => 'logout', 'method' => 'POST', 'id' => 'logout-form', 'style' => 'display: none']) !!}
-                                        
+
                                         {!! Form::close() !!}
                                     </div>
                                 </li>
@@ -74,5 +75,7 @@
             </main>
         </div>
         {{ Html::script(mix('/js/click.js')) }}
+        {{ Html::script(('/js/toastr.min.js')) }}
+        {!! Toastr::message() !!}
     </body>
 </html>

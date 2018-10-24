@@ -30,5 +30,9 @@ return [
     'delete' => 'Delete',
     'successfully_adding' => 'Bạn đã thêm thành công!',
     'successfully_delete' => 'Bạn đã xóa thành công!',
+    'successfully_update' => 'Bạn đã cập nhật dữ liệu thành công!',
     'notification' => 'Thông báo:',
+    'edit_task' => 'Edit',
+    'task_edit' => 'Edit Task',
+    'update_task' => 'Update',
 ];

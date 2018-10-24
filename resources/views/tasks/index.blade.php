@@ -45,6 +45,7 @@
                             <thead>
                                 <th>@lang('message.task')</th>
                                 <th>&nbsp;</th>
+                                <th>&nbsp;</th>
                             </thead>
 
                             <tbody>
@@ -56,13 +57,19 @@
                                         </td>
 
                                         <td>
-                                            {!! Form::open(['url' => ('tasks/'.$task->id), 'method' => 'POST']) !!}
+                                            {!! Form::open(['url' => ('tasks/'.$task->id . '/edit'), 'method' => 'GET']) !!}
 
-                                                {{ method_field('DELETE') }}
-
-                                                {{ Form::submit(trans('message.delete'), ['class' => 'btn btn-danger', 'id' => 'delete-task' . ($task->id)]) }}
+                                                {{ Form::submit(trans('message.edit_task'), ['class' => 'btn btn-danger', 'id' => 'edit-task' . ($task->id)]) }}
                                             {!! Form::close() !!}
                                         </td>
+
+                                        <td>
+                                            {!! Form::open(['url' => ('tasks/'.$task->id), 'method' => 'POST', 'method' => 'DELETE']) !!}
+
+                                                {{ Form::submit(trans('message.delete'), ['class' => 'btn btn-danger', 'id' => 'delete-task-' . ($task->id)]) }}
+                                            {!! Form::close() !!}
+                                        </td>
+
                                     </tr>
                                 @endforeach
                             </tbody>

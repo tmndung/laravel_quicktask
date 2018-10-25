@@ -17,7 +17,7 @@
 
         <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-        <link rel="stylesheet" href="css/toastr.min.css">
+        <link href="{{ asset('css/toastr.min.css') }}" rel="stylesheet">
     </head>
     <body>
         <div id="app">

@@ -41,4 +41,16 @@ class TaskController extends Controller
 
         return back();
     }
+
+    public function edit(Request $request, Task $task)
+    {
+        return view('tasks.update', compact('task'));
+    }
+
+    public function update(Request $request, Task $task)
+    {
+        $task->update($request->all());
+        Toastr::success(trans('message.successfully_update') , trans('message.notification'), ["positionClass" => "toast-top-right"]);
+        return back();
+    }
 }

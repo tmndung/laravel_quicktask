@@ -14,7 +14,7 @@
                             {!! Form::label('email', 'E-Mail Address', ['class' => 'col-sm-4 col-form-label text-md-right']) !!}
                             <div class="col-md-6">
                                 {!! Form::email('email', old('email'), ['class' => 'form-control' . ($errors->has('email') ? ' is-invalid' : ''),'required','autofocus' ]) !!}
-                            
+
                                 @include('errors.error')
                             </div>
                         </div>
@@ -44,7 +44,7 @@
                                 {!! Form::submit(trans('message.login'), ['class' => 'btn btn-primary'] ) !!}
 
                                 <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    @lang('message.forgot_password') 
+                                    @lang('message.forgot_password')
                                 </a>
                             </div>
                         </div>
